@@ -19,7 +19,7 @@ class File(object):
             if not os.path.isdir(directory):
                 os.makedirs(directory)
             else:
-                logging.warning("Content will be overwritten, directory already exists: %s", directory)
+                logging.debug("Content will be overwritten, directory already exists: %s", directory)
 
         for key, value in self.props.items():
             self.template = self.template.replace('{{ ' + key + ' }}', value)
