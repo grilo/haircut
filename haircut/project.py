@@ -2,7 +2,7 @@
 
 import os
 
-from template import setup, cli, readme, tests, conftest, init, gitignore
+from template import setup, cli, readme, tests, conftest, init, gitignore, requirements_dev
 
 
 class Base(object):
