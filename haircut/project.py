@@ -2,7 +2,7 @@
 
 import os
 
-from template import setup, cli, readme, tests, conftest, init, gitignore, requirements_dev
+from template import setup, cli, readme, tests, conftest, init, gitignore, requirements_dev, coverage
 
 
 class Base(object):
@@ -18,6 +18,7 @@ class Base(object):
             init.File(name),
             gitignore.File(name),
             requirements_dev.File(name),
+            coverage.File(name),
         ]
 
     def generate(self):
